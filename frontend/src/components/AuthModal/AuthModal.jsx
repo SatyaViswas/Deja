@@ -144,6 +144,13 @@ export default function AuthModal({ onClose }) {
             </div>
           )}
 
+          <div className="auth-modal__info-card" role="note">
+            <svg viewBox="0 0 24 24" fill="none" width="16" height="16" aria-hidden="true">
+              <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <span>Note: Our free-tier backend may take up to 50 seconds to wake up. Please be patient while logging in or signing up.</span>
+          </div>
+
           <button
             id="auth-email-submit-btn"
             type="submit"

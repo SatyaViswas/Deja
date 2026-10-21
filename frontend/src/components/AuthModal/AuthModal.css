@@ -307,6 +307,34 @@
   color: #6ee7b7;
 }
 
+.auth-modal__info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  color: hsl(217, 90%, 65%);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .auth-modal__info-card {
+  background: rgba(96, 165, 250, 0.10);
+  border-color: rgba(96, 165, 250, 0.25);
+  color: #93c5fd;
+}
+
+[data-theme="light"] .auth-modal__info-card {
+  color: hsl(217, 90%, 40%);
+}
+
+.auth-modal__info-card svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
 /* ── Primary Button ─────────────────────────────────────────── */
 .auth-modal__btn-primary {
   width: 100%;
